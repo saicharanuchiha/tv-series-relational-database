@@ -11,6 +11,9 @@ The accompanying SQL scripts not only build the schema but also execute complex 
 
 ## 🚧 Database Architecture 
 To ensure data integrity, the database was built using a normalized schema consisting of three core tables:
+
+![TV Series Entity Relationship Diagram](tv_series_erd.png)
+
 1. **`reviewers`**: Stores user data with unique auto-incrementing IDs.
 2. **`series`**: Catalogs television shows by release year and genre.
 3. **`reviews`**: A mapping table utilizing Foreign Keys tied to both `reviewers` and `series` to track individual ratings.
